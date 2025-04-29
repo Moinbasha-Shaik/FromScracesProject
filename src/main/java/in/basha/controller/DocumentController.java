@@ -47,10 +47,6 @@
 //	}
 //}
 
-
-
-
-
 package in.basha.controller;
 
 import java.util.List;
@@ -105,5 +101,4 @@ public class DocumentController {
                     .body("Failed to fetch documents: " + e.getMessage());
         }
     }
-
 }
