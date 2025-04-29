@@ -101,4 +101,9 @@ public class DocumentController {
                     .body("Failed to fetch documents: " + e.getMessage());
         }
     }
+    
+    @GetMapping("/welcome")
+    public String getWelcomeMsg() {
+    	return "welcome to From scratch";
+    }
 }
