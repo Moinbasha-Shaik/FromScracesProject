@@ -51,8 +51,10 @@ import org.springframework.web.multipart.MultipartFile;
 
 import in.basha.entity.Document;
 import in.basha.repo.DocumentRepository;
+import org.springframework.transaction.annotation.Transactional;
 
 @Service
+
 public class DocumentService {
 
 	@Autowired
@@ -61,6 +63,7 @@ public class DocumentService {
 	@Autowired
 	private S3Service s3Service;
 
+	@Transactional
 	public Document saveDocument(String name, String email, String company, String title, String description,
 			String phoneNumber, MultipartFile file) throws Exception {
 
