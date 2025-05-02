@@ -102,8 +102,5 @@ public class DocumentController {
         }
     }
     
-    @GetMapping("/welcome")
-    public String getWelcomeMsg() {
-    	return "welcome to From scratch";
-    }
+    
 }
