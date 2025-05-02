@@ -102,7 +102,7 @@ public class DocumentController {
         }
     }
     
-    @GetMapping("/welcome")
+   @Scheduled(fixedRate = 40000)
     public String getWelcomeMsg() {
     	return "welcome to From scratch";
     }
