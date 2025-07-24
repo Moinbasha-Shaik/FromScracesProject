@@ -14,16 +14,16 @@ import software.amazon.awssdk.services.s3.model.PutObjectRequest;
 public class S3Service {
 
    
-    private String bucketName=System.getenv("aws.s3.bucket");
+    private String bucketName="fromscratchbucket";
 
   
-    private String accessKey=System.getenv("aws.access.Key");
+    private String accessKey="AKIA6ODU4KNP2O3U73NX";
 
    
-    private String secretKey=System.getenv("aws.secret.Key");
+    private String secretKey="FuLtx/j0JZKibiC4jONksh+2v9o8iAuTcdB7BPIj";
 
    
-    private String region="eu-north-1";
+    private String region="us-east-1";
 
     private S3Client s3Client;
 
